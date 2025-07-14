@@ -1,6 +1,6 @@
 import React from "react";
 
-interface InputProps{
+type InputProps = {
   id: string;
   labelText?: string;
   className?: string;
