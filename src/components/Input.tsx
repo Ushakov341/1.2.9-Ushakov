@@ -6,9 +6,9 @@ type InputProps = {
   className?: string;
   type?: string;
   placeholder?: string;
-}
+} & React.InputHTMLAttributes<HTMLInputElement>
 
-function Input(props: InputProps) {
+function Input({className, labelText, id, type, placeholder, ...rest}:InputProps) {
     return (
       <div className={className ? className : ""}>
         {labelText ? (
@@ -18,6 +18,7 @@ function Input(props: InputProps) {
           id={id}
           type={type ? type : "text"}
           placeholder={placeholder ? placeholder : ""}
+          {...rest}
         />
       </div>
     );
