@@ -6,7 +6,7 @@ type InputProps = {
   className?: string;
   type?: string;
   placeholder?: string;
-} & React.InputHTMLAttributes<HTMLInputElement>
+} 
 
 function Input({className, labelText, id, type, placeholder, ...rest}:InputProps) {
     return (
