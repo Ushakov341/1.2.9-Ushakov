@@ -10,14 +10,14 @@ type InputProps = {
 
 function Input(props: InputProps) {
     return (
-      <div className={props.className ? props.className : ""}>
-        {props.labelText ? (
-          <label htmlFor={props.id}>{props.labelText}</label>
+      <div className={className ? className : ""}>
+        {labelText ? (
+          <label htmlFor={id}>{labelText}</label>
         ) : null}
         <input
-          id={props.id}
-          type={props.type ? props.type : "text"}
-          placeholder={props.placeholder ? props.placeholder : ""}
+          id={id}
+          type={type ? type : "text"}
+          placeholder={placeholder ? placeholder : ""}
         />
       </div>
     );
